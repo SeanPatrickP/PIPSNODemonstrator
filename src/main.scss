@@ -1,0 +1,650 @@
+/**
+The~ in front of the path is Webpack specific and tells Webpack that the path begins with an npm module
+rather than being a relative path
+*/
+
+@import "~@react/datagrid/style/main";
+@import "~@react/design-system/style/main";
+
+.ag-react-container {
+  div,
+  .form-control {
+    background-color: transparent;
+    border: 0;
+  }
+}
+
+.container {
+  max-width: 100%;
+}
+
+.standard-grid-cell {
+  background-color: transparent;
+}
+
+.directive-container {
+  h1,
+  h2 {
+    font-size: 125%;
+    margin: 0;
+    line-height: unset;
+  }
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  flex: 1 1 auto;
+
+  // Each directive
+  > * {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 500px;
+    align-self: stretch;
+    max-width: 100%;
+    min-height: 58rem;
+    position: relative;
+    background-color: white;
+    margin: 2px;
+
+    //  Directive contents
+    > svg {
+      width: 100%;
+      flex: 1 1 auto;
+    }
+  }
+}
+
+.modal-table-container {
+  display: flex;
+  height: 500px;
+}
+
+.modal-footer {
+  justify-content: flex-start;
+}
+
+.modal-container-large {
+  width: 2000px;
+}
+
+.editor-message {
+  display: flex;
+  width: 100%;
+  height: calc(lO0vh - 42px);
+  justify-content: center;
+  align-items: center;
+}
+
+.editor-message h1 {
+  font-size: 200%;
+}
+
+.container.sno-editor-container {
+  margin: 48px 0px 70px 0px;
+  padding: 0;
+  width: 100%;
+}
+
+a:hover .fa {
+  text-decoration: none;
+}
+
+.editor-sections {
+  padding: 0;
+}
+
+.editor-sections > .row {
+  margin: 0;
+  padding: 20px;
+}
+
+.inline-nested-ct {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.nested-ct {
+  border-top: 1px solid lightgrey;
+  border-bottom: lpx solid lightgrey;
+  margin-bottom: 15px;
+  padding-top: 15px;
+}
+
+.nested-ct-bottom {
+  margin-bottom: 0px;
+}
+
+.editor-sections > .row:nth-child(even),
+.container-with-bottom-panel > .row:nth-child(even) {
+  background: whitesmoke;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  margin-bottom: 0px;
+}
+
+.container-with-bottom-panel > .row:nth-child(odd) {
+  background: white;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  margin-bottom: 0px;
+}
+
+.editor-sections .grid-container .scrollable-container {
+  background: white;
+}
+
+.selector {
+  padding: 5px 10px;
+  .btn {
+    margin-bottom: 5px;
+  }
+}
+
+.selector-bottom {
+  margin-bottom: 15px;
+}
+
+.header-outer {
+  background: rgb(17, 41, 77);
+  position: fixed;
+  z-index: 2001;
+  width: 100%;
+}
+
+.alert-outer {
+  position: fixed;
+  z-index: 2000;
+  width: 100%;
+}
+
+.secondary-modal,
+.modal_backdrop {
+  z-index: 1 !important;
+}
+
+.modal {
+  z-index: 2;
+}
+
+.uitk-mb-1 {
+  display: list-item;
+}
+
+.sno-editor-components {
+  margin-top: 48px;
+}
+
+.action-outer {
+  display: inline-block;
+  flex-direction: row-reverse;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 5px 10px;
+  min-height: 48px;
+  border-top: 1px solid lightgray;
+  background: rgb(17, 41, 77);
+  margin: 0;
+  align-items: stretch;
+}
+
+.action-result {
+  padding-left: 12px;
+  padding-right: 12px;
+  border: 1px solid white;
+  color: white;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: fit-content;
+}
+
+.action-success {
+  background: darkgreen;
+}
+
+.action-error {
+  background: darkred;
+}
+
+.info-box {
+  position: fixed;
+  bottom: 77px;
+  min-height: initial;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.red-box {
+  border: 1px solid darkred;
+}
+
+.red-box-right {
+  right: 0;
+}
+
+.green-box {
+  border: 1px solid darkgreen;
+  right: 0;
+}
+
+.blue-box {
+  border: 1px solid darkblue;
+}
+
+.info-box-header {
+  display: inline-block;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+}
+
+.info-box-contents {
+  width: 550px;
+  margin-left: 10px;
+  max-height: 500px;
+  overflow: scroll;
+}
+
+.info-box-block {
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.red-box-header {
+  background: darkred;
+}
+
+.green-box-header {
+  background: darkgreen;
+  border-radius: 10px 10px 0 0;
+}
+
+.blue-box-header {
+  background: darkblue;
+}
+
+.container.pal-editor,
+.container.full-editor {
+  width: 100%;
+  padding: 0;
+}
+
+.pal-quantity-ct .container,
+.pal-quantity-ct-list .container {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.template-section {
+  padding: 20px;
+  border-bottom: 1px solid lightgrey;
+  background: whitesmoke;
+}
+
+.template-section > .row {
+  margin: 0;
+}
+
+.multi-select .option {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 400px;
+
+  > div:first-child {
+    flex: 1 1;
+  }
+
+  > div:last-child {
+    flex: 0 0;
+  }
+}
+
+.date-picker {
+  border: 0;
+  margin: 0;
+}
+
+.disabled {
+  pointer-events: none;
+}
+
+.small-action-button-tooltip {
+  color: black !important;
+}
+
+.small-action-button {
+  border: 0;
+  margin-left: 0;
+  padding: 0;
+  background: transparent;
+  height: 100%;
+  float: left;
+  color: #186ade;
+}
+
+.small-action-button-adjacent {
+  border: 0;
+  background: transparent;
+  height: 100%;
+  color: #186ade;
+}
+
+.small-action-button:focus,
+.small-action-button-adjacent:focus {
+  outline: none;
+}
+
+button:disabled {
+  color: #dde1e3;
+}
+
+.button-icon {
+  color: inherit;
+}
+
+.button-col-right {
+  padding-left: 5;
+}
+
+.table-grid {
+  height: 200px;
+}
+
+.table-grid-column {
+  overflow: hidden;
+}
+
+.row-action-buttons {
+  display: inline-flex;
+}
+
+.row-action-button {
+  margin: 0 5px 0 0 !important;
+}
+
+.custom-tooltip {
+  position: absolute;
+  width: 150px;
+  min-height: 40px;
+  white-space: initial;
+  pointer-events: none;
+  transition: opacity 1s;
+  background-color: white;
+}
+
+.custom-tooltip.ag-tooltip-hiding,
+.hidden-tooltip {
+  opacity: 0;
+}
+
+.custom-tooltip p {
+  margin: 5px;
+}
+
+.red-bg {
+  background-color: #d91f11 !important;
+}
+
+.white-bg {
+  background-color: transparent !important;
+}
+
+.date-icon-container {
+  border: 1px solid lightgray;
+
+  border-radius: 0.25rem;
+}
+
+.cell-check-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.collapsible-ct {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.collapsible-ct-action {
+  display: inline;
+  height: auto;
+  margin: 0;
+}
+
+.secondary-button {
+  margin-right: 5px;
+  margin-left: 0px;
+}
+
+.nav-item {
+  .active {
+    background-color: yellow !important;
+  }
+}
+
+.active-row-definition {
+  background-color: yellow;
+}
+
+.bottom {
+  top: 100%;
+  position: sticky;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.container-with-bottom-panel {
+  height: 100%;
+}
+
+.row {
+  margin-bottom: 10px;
+}
+
+button {
+  margin: 0 5px;
+}
+
+.ag-cell,
+.input_input {
+  font-size: 1rem !important;
+  color: #3e5463 !important;
+}
+
+.cell-click-text {
+  color: blue;
+}
+
+.header-row-text {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.entire-date-range-selector-text {
+  font-size: 14px;
+}
+
+.nested-row-text {
+  margin-top: 0;
+}
+
+.header-row {
+  margin-left: 0;
+}
+
+.nested-row {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 15px;
+}
+
+.cell-selector-outer {
+  width: fit-content;
+}
+
+.col-sm-3 {
+  max-width: 300px;
+}
+
+.col-sm-1 {
+  padding-right: 0px;
+}
+
+.inventory-periods-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-settings-header {
+  font-size: 125%;
+  margin: 0;
+  line-height: unset;
+}
+
+.expanded-section-header {
+  height: 34px;
+  margin-bottom: 10px;
+}
+
+.hidden-section-text {
+  text-align: center;
+  color: red;
+}
+
+.nav-tabs {
+  border: 0px;
+}
+
+.nav-tabs-vertical {
+  margin-top: 15px;
+  overflow: hidden;
+}
+
+.click-option-vertical-top {
+  margin-top: 15px;
+}
+
+.bi-dropdown-outer {
+  display: flex;
+}
+
+.bi-dropdown-item {
+  width: 50%;
+}
+
+.settings-button {
+  margin-left: 20px;
+}
+
+.settings-header-with-button {
+  display: flex;
+}
+
+.svg-inline--fa {
+  height: 17px !important;
+  width: 17px !important;
+}
+
+.cell-selector-search-bar {
+  margin-bottom: 30px;
+}
+
+.hidden {
+  display: none;
+}
+
+.disabled-update-button {
+  color: #0e171f !important;
+  background-color: #dce3e8 !important;
+  border-color: #dce3e8 !important;
+}
+
+.red-button-text {
+  color: darkred !important;
+  font-weight: bold;
+  height: 100%;
+}
+
+.red-result-outer {
+  border-color: red;
+}
+
+.green-button-text {
+  color: darkgreen !important;
+  font-weight: bold;
+  height: 100%;
+}
+
+.blue-button-text {
+  color: darkblue !important;
+
+  font-weight: bold;
+  height: 100%;
+}
+
+.info-box-close {
+  color: white;
+}
+
+.info-box-text {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.form-control {
+  border: 1px solid lightgray;
+}
+
+.risk-hint-outer {
+  display: flex;
+}
+
+.blue-box-check-box {
+  margin-top: 5px;
+}
+
+.blue-box-risk-hint-title {
+  width: 40px;
+}
+
+.status-panel {
+  display: flex;
+  margin-top: 10px;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.status-panel:empty {
+  margin-top: 0px;
+}
+
+.action-panel {
+  height: 35px;
+}
+
+.check-class {
+  color: lightseagreen;
+}
+
+.clear-class {
+  color: red;
+}
+
+.checkbox {
+  width: fit-content;
+}
