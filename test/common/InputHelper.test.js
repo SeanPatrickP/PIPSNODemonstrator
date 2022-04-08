@@ -203,7 +203,7 @@ describe("testParseSpecialDate", () => {
   });
 
   test("specialDate2", () => {
-    expect(parseSpecialDate("0l-JAN-1952")).toEqual("Start");
+    expect(parseSpecialDate("01-JAN-1952")).toEqual("Start");
   });
 
   test("specialDateOppositeBound1", () => {
